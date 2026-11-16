@@ -67,7 +67,7 @@ function average(list) {
 
 function best(list) {
   if (list.length === 0) return null;
-  let top = list; 
+  let top = list[0]; 
   for (let i = 1; i < list.length; i++) {
     if (list[i].rating > top.rating) {
       top = list[i];
@@ -110,8 +110,8 @@ console.log("B2. 최고 평점 영화:", best(movies));
 console.log("B3. 평점 8.0 이상:", filterByRating(movies, 8.0));
 console.log("B4. 평점 내림차순 정렬:", sortBy(movies, "rating", true));
 console.log("B5. '어벤져스' 검색 결과:", search(movies, "어벤져스"));
-console.log("B6. 숫자 포맷(1번 관객수):", formatNumber(movies.audience));
-console.log("B7. 경과 연수(1번 영화):", yearsSince(movies.releaseDate) + "년");
+console.log("B6. 숫자 포맷(1번 관객수):", formatNumber(movies[0].audience));
+console.log("B7. 경과 연수(1번 영화):", yearsSince(movies[0].releaseDate) + "년");
 
 
 function getList(data) {
@@ -135,8 +135,9 @@ const top5 = sortBy(tmdbMovies, "vote_average", true).slice(0, 5);
 console.log(`C1 page ${TMDB.page}, total_pages ${TMDB.total_pages}, total_results ${TMDB.total_results}, 이번 응답 ${tmdbMovies.length}편`);
 console.log(`C2 상영작 평균 평점: ${avgVote.toFixed(1)}`);
 
-const found = search(tmdbMovies, "검색어"); 
-console.log(`C4 '검색어' 검색: ${found.length}편`);
+const found = search(tmdbMovies, "the");
+console.log(`C4 'the' 검색: ${found.length}편`);
+
 
 console.table(top5, ["title", "release_date", "vote_average"]);
 

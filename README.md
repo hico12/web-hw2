@@ -1,7 +1,7 @@
 # 웹개발기초 실습과제 #2 — JS 영화 데이터 분석
 
 - **학번 / 이름:** 2651047 이규민
-- **GitHub 저장소 주소:** https://github.com
+- **GitHub 저장소 주소:** https://github.com/hico12/web-hw2
 - **GitHub Pages 배포 주소:** https://github.io
 
 ## 콘솔 자가 테스트 결과 (8개 항목)
