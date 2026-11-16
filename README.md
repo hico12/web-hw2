@@ -2,7 +2,7 @@
 
 - **학번 / 이름:** 2651047 이규민
 - **GitHub 저장소 주소:** https://github.com/hico12/web-hw2
-- **GitHub Pages 배포 주소:** https://github.io
+- **GitHub Pages 배포 주소:** [https://github.io](https://hico12.github.io/web-hw2/)
 
 ## 콘솔 자가 테스트 결과 (8개 항목)
 1. `average(movies)` 평균 평점 반환: O
